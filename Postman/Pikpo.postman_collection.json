@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "2eff3478-9d4a-435b-84c6-7055ae99ae37",
+		"name": "Pikpo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17198851"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username_T3\": \"risuii\",\n    \"role\": \"backend\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAccount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/profile/37",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profile",
+						"37"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAccount",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username_T3\": \"iniTier1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/update/40",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"update",
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Membership",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/membership/40/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"membership",
+						"40",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
